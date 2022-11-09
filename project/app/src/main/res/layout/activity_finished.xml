@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Finished">
+
+    <TextView
+        android:id="@+id/LBL_TotalScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score total : 0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/LBL_InGameScore"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_InGameScore" />
+
+    <TextView
+        android:id="@+id/LBL_InGameScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Score de la partie : 0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_ResultAnnouncer" />
+
+    <TextView
+        android:id="@+id/LBL_ResultAnnouncer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="GAGNE"
+        android:textColor="@android:color/black"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_FinishTitle" />
+
+    <TextView
+        android:id="@+id/LBL_FinishTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Partie terminée !"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BT_Replay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="Replay"
+        android:text="Rejouer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_TotalScore" />
+
+    <Button
+        android:id="@+id/BT_Finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Finish"
+        android:text="Terminer"
+        app:layout_constraintEnd_toEndOf="@+id/BT_Replay"
+        app:layout_constraintStart_toStartOf="@+id/BT_Replay"
+        app:layout_constraintTop_toBottomOf="@+id/BT_Replay" />
+</androidx.constraintlayout.widget.ConstraintLayout>

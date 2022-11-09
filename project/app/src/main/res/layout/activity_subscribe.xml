@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Subscribe">
+
+    <TextView
+        android:id="@+id/LBL_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Inscription"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TXT_Mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Title" />
+
+    <EditText
+        android:id="@+id/TXT_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_Password" />
+
+    <TextView
+        android:id="@+id/LBL_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Mot de passe"
+        app:layout_constraintBottom_toBottomOf="@+id/TXT_Password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TXT_Password" />
+
+    <TextView
+        android:id="@+id/LBL_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Prénom"
+        app:layout_constraintBottom_toBottomOf="@+id/TXT_Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TXT_Name" />
+
+    <EditText
+        android:id="@+id/TXT_Birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_Surname" />
+
+    <TextView
+        android:id="@+id/LBL_Mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Adresse mail"
+        app:layout_constraintBottom_toBottomOf="@+id/TXT_Mail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TXT_Mail" />
+
+    <TextView
+        android:id="@+id/LBL_Surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Nom"
+        app:layout_constraintBottom_toBottomOf="@+id/TXT_Surname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TXT_Surname" />
+
+    <EditText
+        android:id="@+id/TXT_Surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_Name" />
+
+    <TextView
+        android:id="@+id/LBL_Birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Date de naissance"
+        app:layout_constraintBottom_toBottomOf="@+id/TXT_Birthday"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TXT_Birthday" />
+
+    <EditText
+        android:id="@+id/TXT_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_Mail" />
+
+    <RadioGroup
+        android:id="@+id/RG_Sex"
+        android:layout_width="212dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXT_Birthday">
+
+        <RadioButton
+            android:id="@+id/RB_WomanSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Femme" />
+
+        <RadioButton
+            android:id="@+id/RB_ManSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Homme" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/LBL_Sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Sexe"
+        app:layout_constraintBottom_toBottomOf="@+id/RG_Sex"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/RG_Sex" />
+
+    <Button
+        android:id="@+id/BT_Return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Return"
+        android:text="Retour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BT_Validate" />
+
+    <Button
+        android:id="@+id/BT_Validate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="Validate"
+        android:text="Valider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RG_Sex" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game">
+
+    <TextView
+        android:id="@+id/LBL_Rule8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="- Le papier repousse Spock"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Rule7" />
+
+    <TextView
+        android:id="@+id/LBL_Rule1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="- Les ciseaux coupent le papier"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_RulesTitle" />
+
+    <TextView
+        android:id="@+id/LBL_Rule7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="- Le lézard mange le papier"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Rule6" />
+
+    <TextView
+        android:id="@+id/LBL_Rule10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="- La pierre bat les ciseaux"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Rule9" />
+
+    <TextView
+        android:id="@+id/LBL_Rule9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="- Spock détruit la pierre"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Rule8" />
+
+    <TextView
+        android:id="@+id/LBL_Rule3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="- La pierre écrase le lézard"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Rule2" />
+
+    <TextView
+        android:id="@+id/LBL_Rule4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="- Le lézard empoisonne Spock"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Rule3" />
+
+    <TextView
+        android:id="@+id/LBL_Rule5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="- Spock écrabouille les ciseaux"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Rule4" />
+
+    <TextView
+        android:id="@+id/LBL_Rule6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="- Les ciseaux décapitent le lézard"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Rule5" />
+
+    <TextView
+        android:id="@+id/LBL_Limit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="-----------------------------------------------------------------------------------------"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_NbManche" />
+
+    <TextView
+        android:id="@+id/LBL_Limit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="-----------------------------------------------------------------------------------------"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BT_Pierre" />
+
+    <Button
+        android:id="@+id/BT_Spock"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:onClick="spock_selection"
+        android:text="Spock"
+        app:layout_constraintBottom_toBottomOf="@+id/BT_Lezard"
+        app:layout_constraintStart_toEndOf="@+id/BT_Lezard"
+        app:layout_constraintTop_toTopOf="@+id/BT_Lezard" />
+
+    <TextView
+        android:id="@+id/LBL_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Choisissez un élément"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LBL_RulesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Rappel des règles : "
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Limit3" />
+
+    <Button
+        android:id="@+id/BT_Pierre"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:onClick="pierre_selection"
+        android:text="Pierre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Title" />
+
+    <Button
+        android:id="@+id/BT_Papier"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:onClick="papier_selection"
+        android:text="Papier"
+        app:layout_constraintBottom_toBottomOf="@+id/BT_Pierre"
+        app:layout_constraintStart_toEndOf="@+id/BT_Pierre"
+        app:layout_constraintTop_toTopOf="@+id/BT_Pierre" />
+
+    <Button
+        android:id="@+id/BT_Ciseaux"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:onClick="ciseaux_selection"
+        android:text="Ciseaux"
+        app:layout_constraintBottom_toBottomOf="@+id/BT_Papier"
+        app:layout_constraintStart_toEndOf="@+id/BT_Papier"
+        app:layout_constraintTop_toTopOf="@+id/BT_Papier" />
+
+    <Button
+        android:id="@+id/BT_Lezard"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:onClick="lezard_selection"
+        android:text="Lézard"
+        app:layout_constraintBottom_toBottomOf="@+id/BT_Ciseaux"
+        app:layout_constraintStart_toEndOf="@+id/BT_Ciseaux"
+        app:layout_constraintTop_toTopOf="@+id/BT_Ciseaux" />
+
+    <Button
+        android:id="@+id/BT_Continue"
+        android:layout_width="77dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="Next"
+        android:text="@android:string/ok"
+        app:layout_constraintBottom_toTopOf="@+id/LBL_Limit2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Limit1" />
+
+    <TextView
+        android:id="@+id/LBL_Limit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="-----------------------------------------------------------------------------------------"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_ComputerResult" />
+
+    <TextView
+        android:id="@+id/LBL_ComputerPlays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="L'ordinateur a joué"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Limit1" />
+
+    <TextView
+        android:id="@+id/LBL_ComputerResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Vous gagnez cette étape !"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/LBL_ComputerPlays"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_ComputerPlays" />
+
+    <TextView
+        android:id="@+id/LBL_NbManche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Manche : 1"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Limit2" />
+
+    <TextView
+        android:id="@+id/LBL_NbScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Score : 0"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Limit2" />
+
+    <TextView
+        android:id="@+id/LBL_Rule2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="- Le papier bat la pierre"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LBL_Rule1" />
+
+    <Button
+        android:id="@+id/BT_Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="Cancel"
+        android:text="Abandonner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

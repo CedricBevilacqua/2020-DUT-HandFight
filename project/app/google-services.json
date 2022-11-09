@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "723607563153",
+    "firebase_url": "https://handfight-b8d8a.firebaseio.com",
+    "project_id": "handfight-b8d8a",
+    "storage_bucket": "handfight-b8d8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723607563153:android:2301d40ab92e3d3f348830",
+        "android_client_info": {
+          "package_name": "com.example.handfight"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723607563153-oknffstv8kb16gjuij5ksevab2iillvv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.handfight",
+            "certificate_hash": "f33db4bc824ac935750388ba05e4c9c71cbd3fb6"
+          }
+        },
+        {
+          "client_id": "723607563153-tk1v7hf1fjg5kudhanpu4im94qmnmsri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHtxs2Zg6CqUqhVxP03TFqI8_KgrGcu5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723607563153-tk1v7hf1fjg5kudhanpu4im94qmnmsri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
